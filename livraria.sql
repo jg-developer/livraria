@@ -44,11 +44,11 @@ CREATE TABLE `autor_livro` (
   KEY `id_livro` (`id_livro`),
   CONSTRAINT `autor_livro_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id_autor`),
   CONSTRAINT `autor_livro_ibfk_2` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id_livro`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 /*Data for the table `autor_livro` */
 
-insert  into `autor_livro`(`id_autor_livro`,`id_autor`,`id_livro`) values (1,1,1),(2,2,2),(3,1,2);
+insert  into `autor_livro`(`id_autor_livro`,`id_autor`,`id_livro`) values (1,1,1),(2,2,2),(3,1,2),(4,1,5),(5,2,5),(6,1,6),(7,2,6),(8,1,7),(9,2,7),(10,1,8),(11,2,8),(12,1,9),(13,2,9),(14,1,10),(15,2,10);
 
 /*Table structure for table `editora` */
 
@@ -92,11 +92,11 @@ CREATE TABLE `livro` (
   KEY `id_editora` (`id_editora`),
   CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_genero`) REFERENCES `genero` (`id_genero`),
   CONSTRAINT `livro_ibfk_2` FOREIGN KEY (`id_editora`) REFERENCES `editora` (`id_editora`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 /*Data for the table `livro` */
 
-insert  into `livro`(`id_livro`,`titulo`,`id_genero`,`id_editora`) values (1,'Harry Potter',1,1),(2,'Senhor dos Anéis',2,1),(3,'Guardiões da Galáxia',3,1);
+insert  into `livro`(`id_livro`,`titulo`,`id_genero`,`id_editora`) values (1,'Harry Potter',1,1),(2,'Senhor dos Anéis',2,1),(3,'Guardiões da Galáxia',3,1),(4,'Teste',1,1),(5,'Teste',1,1),(6,' TESTE3',1,1),(7,'Teste',1,1),(8,'Teste',1,1),(9,'Teste',1,1),(10,'Teste',1,1);
 
 /*Table structure for table `vw_livros` */
 
