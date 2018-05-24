@@ -1,14 +1,14 @@
 <?php
 require_once "menu.php";?>
     <section class="container">
-        <h2 class="text-center">Autores</h2>
+        <h2 class="text-center">Editoras</h2>
         <form method="post" action="#" class="row justify-content-center">
             <div class="form-group">
-                    <select name="autor" class="form-control" id="exampleSelect1">
-                        <option disabled selected>Selecione um autor</option>
+                    <select name="editora" class="form-control" id="exampleSelect1">
+                        <option disabled selected>Selecione uma editora</option>
                         <?php
                         foreach ($retorno as $dado){
-                            echo "<option  value='{$dado->id_autor}'>{$dado->nome}</option>";
+                            echo "<option  value='{$dado->id_editora}'>{$dado->nome}</option>";
                         }
                         ?>
                     </select>

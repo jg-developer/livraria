@@ -1,7 +1,7 @@
 <?php
 require_once "menu.php";?>
     <section class="container">
-        <h1 class="text-center">Generos</h1>
+        <h2 class="text-center">Generos</h2>
         <form method="post" action="#" class="row justify-content-center">
             <div class="form-group">
                     <select name="genero" class="form-control" id="exampleSelect1">
